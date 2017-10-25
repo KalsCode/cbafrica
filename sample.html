@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Us</title>
+    <title>Computers & Beyond Africa Ltd</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                     <ul class="nav navbar-nav main-navbar-nav">
-                        <li class="active"><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="index.html" title="Home">Home</a></li>
                         <li><a href="services.html" title="Services">Services</a></li>
                         <li><a href="products.html" title="Products">Products</a></li>
                         <li class="dropdown">
@@ -52,11 +52,13 @@
                             </ul>
                         </li>
                         <li><a href="about.html" title="">About Us</a></li>
-                        <li><a href="contact.html" title="">Contact Us</a></li>
+                        <li class="active"><a href="contact.html" title="">Contact Us</a></li>
                     </ul>
+                </div>
             </div>
         </div>
     </nav>
+
 </header>
 <main class="site-main">
     <section class="hero_area">
@@ -65,33 +67,138 @@
             </div>
         </div>
     </section>
-    <section class="services">
-        <h2 class="section-title">Computers and Beyond Africa Ltd</h2>
-        <p class="desc">Our path....</p>
-        <div class="container">
-            <div class="col-md-4 pull-left">
-                <div class="panel panel-success">
-                    <div class="panel-heading">Location</div>
-                    <div class="panel-body"><div class="col-xs-1">
-                        <img src="img/cba_icon.png" width="100" height="100" class="img-rounded pull-left">
+    <div class="container">
 
-                            Plot 13 Buganda Rd 2nd Floor
-                            <br>Mukwano Courts Kampala 0414668810
-                        <br>
-                        <br>Plot 61B Main Street 0434122432 / 0772915830 Jinja
-                       <br>Email: info@cbafrica.com
-                        <br>Web: www.cbafrica.ug
+        <form class="well form-horizontal" role="form" action="contactMailer.php" method="post" id="contact_form">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend style="font-size:3em">Contact Us Today!</legend>
+
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">First Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="fName" placeholder="First Name" class="form-control" type="text">
+                        </div>
                     </div>
+                </div>
 
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Last Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="lName" placeholder="Last Name" class="form-control" type="text">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-8 pull-right">
-                <div class="panel panel-success">
-                    <div class="panel-heading">Details</div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Phone #</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input name="phone" placeholder="0312345678" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Alternate Phone #</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input name="altPhone" placeholder="0757123456" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Company Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="coName" placeholder="company name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Select Basic -->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">District</label>
+                    <div class="col-md-4 selectContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="district" class="form-control selectpicker">
+                                <option value=" ">Please select your District</option>
+                                <option>Kampala</option>
+                                <option>Wakiso</option>
+                                <option>Mbarara</option>
+                                <option>Mubende</option>
+                                <option>Kamuli</option>
+                                <option>Mukono</option>
+                                <option>Rakai</option>
+                                <option>Yumbe</option>
+                                <option>Kibaale</option>
+                                <option>Kyenjojo</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Website</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                            <input name="website" placeholder="Web address (if applicable)" class="form-control"
+                                   type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Inquiry</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="inquiry" placeholder="Inquiry"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <div class="col-md-4 pull-left">
+                        <button type="submit" class="btn btn-success btn-lg pull-right col-md-3">Send<span
+                                class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </main>
 <footer class="site-footer">
     <div class="container">
@@ -113,12 +220,12 @@
                     <li><a href="#" title="">Print Leasing</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Microsoft_Dynamics_ERP" title="">Microsoft Dynamics</a>
                     </li>
-                    <li><a>Micro-finance</a></li>
-                    <li><a>Server Technologies</a></li>
-                    <li><a>Network Solutions</a></li>
-                    <li><a>QuickBooks</a></li>
-                    <li><a>Technical Support</a></li>
-                    <li><a>Custom Software</a></li>
+                    <li><a href="#" title="">Micro-finance</a></li>
+                    <li><a href="#" title="">Server Technologies</a></li>
+                    <li><a href="#" title="">Network Solutions</a></li>
+                    <li><a href="#" title="">QuickBooks</a></li>
+                    <li><a href="#" title="">Technical Support</a></li>
+                    <li><a href="#" title="">Custom Software</a></li>
                 </ul>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 fbox">

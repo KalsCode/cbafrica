@@ -188,14 +188,24 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Button -->
                 <div class="form-group">
-                    <div class="col-md-4 pull-left">
-                        <button type="submit" class="btn btn-success btn-lg pull-right col-md-3">Send<span
-                                class="glyphicon glyphicon-send"></span></button>
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <label for="captcha_response_field" class="control-label">***Security challenge***</label><span class="req"> </span><div id="captcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LcPGAoUAAAAAMAAlCzGdhSjBYpeIOvdML-GQ8Vi&amp;co=aHR0cHM6Ly9zc28uZ29kYWRkeS5jb206NDQz&amp;hl=en&amp;v=r20171011122914&amp;size=normal&amp;cb=psmkob14to6u" title="recaptcha widget" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" height="78" frameborder="0" width="304"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div><script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchaCallback&amp;render=explicit&amp;hl=en"></script><div id="captcha_response_field"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <br>
+                                <button type="submit" class="btn btn-success btn-lg">Send<span
+                                        class="glyphicon glyphicon-send"></span></button>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+                <!-- Button -->
+
             </fieldset>
         </form>
     </div>
